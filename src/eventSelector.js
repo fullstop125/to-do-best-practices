@@ -11,7 +11,7 @@ function updateMyList() {
   const checkMyBoxElements = document.querySelectorAll('.checkbox');
   const descriptionElements = document.querySelectorAll('.task-description');
 
-  let dataBase = [];
+  const dataBase = [];
   for (let i = 0; i < checkMyBoxElements.length; i += 1) {
     dataBase.push({
       description: descriptionElements[i].value,

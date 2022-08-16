@@ -53,7 +53,7 @@ function addMyNewList() {
   if (localStorage.getItem('todos')) {
     listData = JSON.parse(localStorage.getItem('todos'));
   }
-  listData.push({description:inputData.value, completed:false, id:listData.length + 1});
+  listData.push({ description: inputData.value, completed: false, id: listData.length + 1 });
   inputData.value = '';
   listDisplay.innerHTML = '';
   displayMyList(listData);
